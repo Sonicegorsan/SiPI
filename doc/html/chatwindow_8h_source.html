@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Исходный файл client/chatwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('chatwindow_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">chatwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="chatwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CHATWINDOW_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CHATWINDOW_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QTimer&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QTextEdit;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_chat_window.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="class_chat_window.html#a6954b03ed93f3f50f5c59897785fd158">ChatWindow</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_chat_window.html#a6954b03ed93f3f50f5c59897785fd158">ChatWindow</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_chat_window.html#a8009d14487235678390640938eca838b">roomId</a>, <span class="keyword">const</span> QString &amp;<a class="code hl_variable" href="class_chat_window.html#a9cc3fad0a200d63b8f3f280914e9edce">roomName</a>, QTcpSocket *<a class="code hl_variable" href="class_chat_window.html#afc4825a530ab4a13f602e4af45f8a3b7">socket</a>, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_chat_window.html#aa97e17264e8b824eb23a201773890f62">onSendButtonClicked</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_chat_window.html#a656ba8eede7204514a71c6596d9d0464">onReadyRead</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_chat_window.html#a7cb8ccb243d1df2fa5ff0033cede94f6">requestMessages</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_chat_window.html#a517fe26c3ff4774d651acd2d4c813fac">setupUI</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_chat_window.html#a8009d14487235678390640938eca838b">   60</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_chat_window.html#a8009d14487235678390640938eca838b">roomId</a>;                     </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_chat_window.html#a9cc3fad0a200d63b8f3f280914e9edce">   61</a></span>    QString <a class="code hl_variable" href="class_chat_window.html#a9cc3fad0a200d63b8f3f280914e9edce">roomName</a>;               </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_chat_window.html#afc4825a530ab4a13f602e4af45f8a3b7">   62</a></span>    QTcpSocket *<a class="code hl_variable" href="class_chat_window.html#afc4825a530ab4a13f602e4af45f8a3b7">socket</a>;             </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_chat_window.html#a67ebbb1cbbdb89168651514e6b80b41d">   64</a></span>    QTextEdit *<a class="code hl_variable" href="class_chat_window.html#a67ebbb1cbbdb89168651514e6b80b41d">messageView</a>;         </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_chat_window.html#a7fa5f28c8891a48598a63f28bef87904">   65</a></span>    QLineEdit *<a class="code hl_variable" href="class_chat_window.html#a7fa5f28c8891a48598a63f28bef87904">messageInput</a>;        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_chat_window.html#a5ad871d79bd5cb1f6bd258f2a4b73c62">   66</a></span>    QPushButton *<a class="code hl_variable" href="class_chat_window.html#a5ad871d79bd5cb1f6bd258f2a4b73c62">sendButton</a>;        </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_chat_window.html#a957e36c6a8931fa270e3bd046e3e96d9">   67</a></span>    QTimer *<a class="code hl_variable" href="class_chat_window.html#a957e36c6a8931fa270e3bd046e3e96d9">updateTimer</a>;            </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">// CHATWINDOW_H</span></div>
+<div class="ttc" id="aclass_chat_window_html_a517fe26c3ff4774d651acd2d4c813fac"><div class="ttname"><a href="class_chat_window.html#a517fe26c3ff4774d651acd2d4c813fac">ChatWindow::setupUI</a></div><div class="ttdeci">void setupUI()</div><div class="ttdoc">Настраивает пользовательский интерфейс окна чата</div><div class="ttdef"><b>Определения</b> <a href="chatwindow_8cpp_source.html#l00019">chatwindow.cpp:19</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a5ad871d79bd5cb1f6bd258f2a4b73c62"><div class="ttname"><a href="class_chat_window.html#a5ad871d79bd5cb1f6bd258f2a4b73c62">ChatWindow::sendButton</a></div><div class="ttdeci">QPushButton * sendButton</div><div class="ttdoc">Кнопка отправки сообщения</div><div class="ttdef"><b>Определения</b> <a href="#l00066">chatwindow.h:66</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a656ba8eede7204514a71c6596d9d0464"><div class="ttname"><a href="class_chat_window.html#a656ba8eede7204514a71c6596d9d0464">ChatWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdoc">Слот для обработки данных, поступающих от сервера</div><div class="ttdef"><b>Определения</b> <a href="chatwindow_8cpp_source.html#l00057">chatwindow.cpp:57</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a67ebbb1cbbdb89168651514e6b80b41d"><div class="ttname"><a href="class_chat_window.html#a67ebbb1cbbdb89168651514e6b80b41d">ChatWindow::messageView</a></div><div class="ttdeci">QTextEdit * messageView</div><div class="ttdoc">Виджет для отображения сообщений</div><div class="ttdef"><b>Определения</b> <a href="#l00064">chatwindow.h:64</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a6954b03ed93f3f50f5c59897785fd158"><div class="ttname"><a href="class_chat_window.html#a6954b03ed93f3f50f5c59897785fd158">ChatWindow::ChatWindow</a></div><div class="ttdeci">ChatWindow(int roomId, const QString &amp;roomName, QTcpSocket *socket, QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор класса ChatWindow.</div><div class="ttdef"><b>Определения</b> <a href="chatwindow_8cpp_source.html#l00011">chatwindow.cpp:11</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a7cb8ccb243d1df2fa5ff0033cede94f6"><div class="ttname"><a href="class_chat_window.html#a7cb8ccb243d1df2fa5ff0033cede94f6">ChatWindow::requestMessages</a></div><div class="ttdeci">void requestMessages()</div><div class="ttdoc">Запрашивает сообщения от сервера</div><div class="ttdef"><b>Определения</b> <a href="chatwindow_8cpp_source.html#l00046">chatwindow.cpp:46</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a7fa5f28c8891a48598a63f28bef87904"><div class="ttname"><a href="class_chat_window.html#a7fa5f28c8891a48598a63f28bef87904">ChatWindow::messageInput</a></div><div class="ttdeci">QLineEdit * messageInput</div><div class="ttdoc">Поле для ввода нового сообщения</div><div class="ttdef"><b>Определения</b> <a href="#l00065">chatwindow.h:65</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a8009d14487235678390640938eca838b"><div class="ttname"><a href="class_chat_window.html#a8009d14487235678390640938eca838b">ChatWindow::roomId</a></div><div class="ttdeci">int roomId</div><div class="ttdoc">Идентификатор текущей комнаты</div><div class="ttdef"><b>Определения</b> <a href="#l00060">chatwindow.h:60</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a957e36c6a8931fa270e3bd046e3e96d9"><div class="ttname"><a href="class_chat_window.html#a957e36c6a8931fa270e3bd046e3e96d9">ChatWindow::updateTimer</a></div><div class="ttdeci">QTimer * updateTimer</div><div class="ttdoc">Таймер для периодического обновления сообщений</div><div class="ttdef"><b>Определения</b> <a href="#l00067">chatwindow.h:67</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_a9cc3fad0a200d63b8f3f280914e9edce"><div class="ttname"><a href="class_chat_window.html#a9cc3fad0a200d63b8f3f280914e9edce">ChatWindow::roomName</a></div><div class="ttdeci">QString roomName</div><div class="ttdoc">Название текущей комнаты</div><div class="ttdef"><b>Определения</b> <a href="#l00061">chatwindow.h:61</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_aa97e17264e8b824eb23a201773890f62"><div class="ttname"><a href="class_chat_window.html#aa97e17264e8b824eb23a201773890f62">ChatWindow::onSendButtonClicked</a></div><div class="ttdeci">void onSendButtonClicked()</div><div class="ttdoc">Слот, вызываемый при нажатии кнопки отправки сообщения</div><div class="ttdef"><b>Определения</b> <a href="chatwindow_8cpp_source.html#l00082">chatwindow.cpp:82</a></div></div>
+<div class="ttc" id="aclass_chat_window_html_afc4825a530ab4a13f602e4af45f8a3b7"><div class="ttname"><a href="class_chat_window.html#afc4825a530ab4a13f602e4af45f8a3b7">ChatWindow::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">Сокет для связи с сервером</div><div class="ttdef"><b>Определения</b> <a href="#l00062">chatwindow.h:62</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="chatwindow_8h.html">chatwindow.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

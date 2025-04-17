@@ -1,0 +1,697 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Класс MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_main_window.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_main_window-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс MainWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс главного окна приложения  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#a_main_window_inherit__map" alt="Inheritance graph"/></div>
+</div>
+<div class="dynheader">
+Граф связей класса MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#a_main_window_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a986c9e82e47db4e6c05320c429c425bc" id="r_a986c9e82e47db4e6c05320c429c425bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a986c9e82e47db4e6c05320c429c425bc">MainWindow</a> (const QString &amp;<a class="el" href="#a5ab8bc9e88955c633ea7e25f011102cf">username</a>, const QString &amp;<a class="el" href="#ad1cae35899c8aa92de05a1480f7b8600">role</a>, QTcpSocket *<a class="el" href="#af85cfe62c116f8d2f2021e5411b0356e">socket</a>, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a986c9e82e47db4e6c05320c429c425bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_main_window.html" title="Класс главного окна приложения">MainWindow</a>.  <br /></td></tr>
+<tr class="separator:a986c9e82e47db4e6c05320c429c425bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:aa0a84a052eb91bfc3a889b267c71d4bc" id="r_aa0a84a052eb91bfc3a889b267c71d4bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a84a052eb91bfc3a889b267c71d4bc">onChatItemClicked</a> (QTreeWidgetItem *item, int column)</td></tr>
+<tr class="memdesc:aa0a84a052eb91bfc3a889b267c71d4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот, вызываемый при выборе элемента в дереве чатов  <br /></td></tr>
+<tr class="separator:aa0a84a052eb91bfc3a889b267c71d4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209079830a37745e47076a762bab17d6" id="r_a209079830a37745e47076a762bab17d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a209079830a37745e47076a762bab17d6">onReadyRead</a> ()</td></tr>
+<tr class="memdesc:a209079830a37745e47076a762bab17d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки данных, поступающих от сервера  <br /></td></tr>
+<tr class="separator:a209079830a37745e47076a762bab17d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a3a304253c9e7caeef028f75358bf1fd5" id="r_a3a304253c9e7caeef028f75358bf1fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a304253c9e7caeef028f75358bf1fd5">setupUI</a> ()</td></tr>
+<tr class="memdesc:a3a304253c9e7caeef028f75358bf1fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настраивает пользовательский интерфейс главного окна  <br /></td></tr>
+<tr class="separator:a3a304253c9e7caeef028f75358bf1fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a64e0d687d49b2615f9ef9505d8cee2" id="r_a2a64e0d687d49b2615f9ef9505d8cee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a64e0d687d49b2615f9ef9505d8cee2">requestRooms</a> ()</td></tr>
+<tr class="memdesc:a2a64e0d687d49b2615f9ef9505d8cee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрашивает список доступных комнат с сервера  <br /></td></tr>
+<tr class="separator:a2a64e0d687d49b2615f9ef9505d8cee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5d69606f03b6b27a71eeca96c748d6" id="r_afa5d69606f03b6b27a71eeca96c748d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa5d69606f03b6b27a71eeca96c748d6">requestTasks</a> (const QDate &amp;startDate, const QDate &amp;endDate)</td></tr>
+<tr class="memdesc:afa5d69606f03b6b27a71eeca96c748d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запрашивает задачи за указанный период  <br /></td></tr>
+<tr class="separator:afa5d69606f03b6b27a71eeca96c748d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056a896c144a0bbb5da3184a50e775cc" id="r_a056a896c144a0bbb5da3184a50e775cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a056a896c144a0bbb5da3184a50e775cc">onTasksReceived</a> (const QJsonArray &amp;tasksArray)</td></tr>
+<tr class="memdesc:a056a896c144a0bbb5da3184a50e775cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает полученные с сервера задачи  <br /></td></tr>
+<tr class="separator:a056a896c144a0bbb5da3184a50e775cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ac1ce86754c20063ce65d90fefd417b82" id="r_ac1ce86754c20063ce65d90fefd417b82"><td class="memItemLeft" align="right" valign="top">QTreeWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1ce86754c20063ce65d90fefd417b82">chatTree</a></td></tr>
+<tr class="memdesc:ac1ce86754c20063ce65d90fefd417b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виджет для отображения дерева комнат  <br /></td></tr>
+<tr class="separator:ac1ce86754c20063ce65d90fefd417b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a80093d3d697243b2aa14ce0e95848f" id="r_a9a80093d3d697243b2aa14ce0e95848f"><td class="memItemLeft" align="right" valign="top">QCalendarWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a80093d3d697243b2aa14ce0e95848f">calendar</a></td></tr>
+<tr class="memdesc:a9a80093d3d697243b2aa14ce0e95848f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виджет календаря для отображения и выбора дат  <br /></td></tr>
+<tr class="separator:a9a80093d3d697243b2aa14ce0e95848f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d06c77f051dfd9f0ca01ce2b845ebc9" id="r_a1d06c77f051dfd9f0ca01ce2b845ebc9"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d06c77f051dfd9f0ca01ce2b845ebc9">welcomeLabel</a></td></tr>
+<tr class="memdesc:a1d06c77f051dfd9f0ca01ce2b845ebc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метка с приветствием пользователя  <br /></td></tr>
+<tr class="separator:a1d06c77f051dfd9f0ca01ce2b845ebc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ab8bc9e88955c633ea7e25f011102cf" id="r_a5ab8bc9e88955c633ea7e25f011102cf"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab8bc9e88955c633ea7e25f011102cf">username</a></td></tr>
+<tr class="memdesc:a5ab8bc9e88955c633ea7e25f011102cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя аутентифицированного пользователя  <br /></td></tr>
+<tr class="separator:a5ab8bc9e88955c633ea7e25f011102cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cae35899c8aa92de05a1480f7b8600" id="r_ad1cae35899c8aa92de05a1480f7b8600"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1cae35899c8aa92de05a1480f7b8600">role</a></td></tr>
+<tr class="memdesc:ad1cae35899c8aa92de05a1480f7b8600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Роль пользователя  <br /></td></tr>
+<tr class="separator:ad1cae35899c8aa92de05a1480f7b8600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85cfe62c116f8d2f2021e5411b0356e" id="r_af85cfe62c116f8d2f2021e5411b0356e"><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af85cfe62c116f8d2f2021e5411b0356e">socket</a></td></tr>
+<tr class="memdesc:af85cfe62c116f8d2f2021e5411b0356e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сокет для связи с сервером  <br /></td></tr>
+<tr class="separator:af85cfe62c116f8d2f2021e5411b0356e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс главного окна приложения </p>
+<p><a class="el" href="class_main_window.html" title="Класс главного окна приложения">MainWindow</a> предоставляет основной интерфейс приложения после авторизации. Отображает список доступных комнат, календарь с задачами и предоставляет доступ к функциям, соответствующим роли пользователя. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00025">25</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a986c9e82e47db4e6c05320c429c425bc" name="a986c9e82e47db4e6c05320c429c425bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986c9e82e47db4e6c05320c429c425bc">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>role</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QTcpSocket *</td>          <td class="paramname"><span class="paramname"><em>socket</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_main_window.html" title="Класс главного окна приложения">MainWindow</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>Имя пользователя </td></tr>
+    <tr><td class="paramname">role</td><td>Роль пользователя </td></tr>
+    <tr><td class="paramname">socket</td><td>Сокет для соединения с сервером </td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский виджет </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00016">16</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8cpp_source.html#l00091">onReadyRead()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00069">requestRooms()</a>, <a class="el" href="mainwindow_8h_source.html#l00078">role</a>, <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>, <a class="el" href="mainwindow_8h_source.html#l00080">socket</a> и <a class="el" href="mainwindow_8h_source.html#l00077">username</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a986c9e82e47db4e6c05320c429c425bc_cgraph.png" border="0" usemap="#aclass_main_window_a986c9e82e47db4e6c05320c429c425bc_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aa0a84a052eb91bfc3a889b267c71d4bc" name="aa0a84a052eb91bfc3a889b267c71d4bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a84a052eb91bfc3a889b267c71d4bc">&#9670;&#160;</a></span>onChatItemClicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onChatItemClicked </td>
+          <td>(</td>
+          <td class="paramtype">QTreeWidgetItem *</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>column</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот, вызываемый при выборе элемента в дереве чатов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Выбранный элемент </td></tr>
+    <tr><td class="paramname">column</td><td>Выбранная колонка </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00136">136</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00080">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_aa0a84a052eb91bfc3a889b267c71d4bc_icgraph.png" border="0" usemap="#aclass_main_window_aa0a84a052eb91bfc3a889b267c71d4bc_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a209079830a37745e47076a762bab17d6" name="a209079830a37745e47076a762bab17d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209079830a37745e47076a762bab17d6">&#9670;&#160;</a></span>onReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onReadyRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки данных, поступающих от сервера </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00091">91</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00074">chatTree</a>, <a class="el" href="mainwindow_8cpp_source.html#l00120">onTasksReceived()</a> и <a class="el" href="mainwindow_8h_source.html#l00080">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a209079830a37745e47076a762bab17d6_cgraph.png" border="0" usemap="#aclass_main_window_a209079830a37745e47076a762bab17d6_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a209079830a37745e47076a762bab17d6_icgraph.png" border="0" usemap="#aclass_main_window_a209079830a37745e47076a762bab17d6_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a056a896c144a0bbb5da3184a50e775cc" name="a056a896c144a0bbb5da3184a50e775cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056a896c144a0bbb5da3184a50e775cc">&#9670;&#160;</a></span>onTasksReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::onTasksReceived </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>tasksArray</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает полученные с сервера задачи </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tasksArray</td><td>Массив задач в формате JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00120">120</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00075">calendar</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00091">onReadyRead()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a056a896c144a0bbb5da3184a50e775cc_icgraph.png" border="0" usemap="#aclass_main_window_a056a896c144a0bbb5da3184a50e775cc_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a2a64e0d687d49b2615f9ef9505d8cee2" name="a2a64e0d687d49b2615f9ef9505d8cee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a64e0d687d49b2615f9ef9505d8cee2">&#9670;&#160;</a></span>requestRooms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::requestRooms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запрашивает список доступных комнат с сервера </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00069">69</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00080">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a2a64e0d687d49b2615f9ef9505d8cee2_icgraph.png" border="0" usemap="#aclass_main_window_a2a64e0d687d49b2615f9ef9505d8cee2_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="afa5d69606f03b6b27a71eeca96c748d6" name="afa5d69606f03b6b27a71eeca96c748d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa5d69606f03b6b27a71eeca96c748d6">&#9670;&#160;</a></span>requestTasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::requestTasks </td>
+          <td>(</td>
+          <td class="paramtype">const QDate &amp;</td>          <td class="paramname"><span class="paramname"><em>startDate</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDate &amp;</td>          <td class="paramname"><span class="paramname"><em>endDate</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Запрашивает задачи за указанный период </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startDate</td><td>Начальная дата периода </td></tr>
+    <tr><td class="paramname">endDate</td><td>Конечная дата периода </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00079">79</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00080">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_afa5d69606f03b6b27a71eeca96c748d6_icgraph.png" border="0" usemap="#aclass_main_window_afa5d69606f03b6b27a71eeca96c748d6_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a3a304253c9e7caeef028f75358bf1fd5" name="a3a304253c9e7caeef028f75358bf1fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a304253c9e7caeef028f75358bf1fd5">&#9670;&#160;</a></span>setupUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::setupUI </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Настраивает пользовательский интерфейс главного окна </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a> строка <a class="el" href="mainwindow_8cpp_source.html#l00024">24</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="mainwindow_8h_source.html#l00075">calendar</a>, <a class="el" href="mainwindow_8h_source.html#l00074">chatTree</a>, <a class="el" href="mainwindow_8cpp_source.html#l00136">onChatItemClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00079">requestTasks()</a>, <a class="el" href="mainwindow_8h_source.html#l00078">role</a>, <a class="el" href="mainwindow_8h_source.html#l00077">username</a> и <a class="el" href="mainwindow_8h_source.html#l00076">welcomeLabel</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a3a304253c9e7caeef028f75358bf1fd5_cgraph.png" border="0" usemap="#aclass_main_window_a3a304253c9e7caeef028f75358bf1fd5_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a3a304253c9e7caeef028f75358bf1fd5_icgraph.png" border="0" usemap="#aclass_main_window_a3a304253c9e7caeef028f75358bf1fd5_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a9a80093d3d697243b2aa14ce0e95848f" name="a9a80093d3d697243b2aa14ce0e95848f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a80093d3d697243b2aa14ce0e95848f">&#9670;&#160;</a></span>calendar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QCalendarWidget* MainWindow::calendar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Виджет календаря для отображения и выбора дат </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00120">onTasksReceived()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="ac1ce86754c20063ce65d90fefd417b82" name="ac1ce86754c20063ce65d90fefd417b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ce86754c20063ce65d90fefd417b82">&#9670;&#160;</a></span>chatTree</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTreeWidget* MainWindow::chatTree</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Виджет для отображения дерева комнат </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00074">74</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00091">onReadyRead()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="ad1cae35899c8aa92de05a1480f7b8600" name="ad1cae35899c8aa92de05a1480f7b8600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1cae35899c8aa92de05a1480f7b8600">&#9670;&#160;</a></span>role</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainWindow::role</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Роль пользователя </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00078">78</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="af85cfe62c116f8d2f2021e5411b0356e" name="af85cfe62c116f8d2f2021e5411b0356e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85cfe62c116f8d2f2021e5411b0356e">&#9670;&#160;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* MainWindow::socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сокет для связи с сервером </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00080">80</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00136">onChatItemClicked()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00091">onReadyRead()</a>, <a class="el" href="mainwindow_8cpp_source.html#l00069">requestRooms()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00079">requestTasks()</a>.</p>
+
+</div>
+</div>
+<a id="a5ab8bc9e88955c633ea7e25f011102cf" name="a5ab8bc9e88955c633ea7e25f011102cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab8bc9e88955c633ea7e25f011102cf">&#9670;&#160;</a></span>username</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainWindow::username</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя аутентифицированного пользователя </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00077">77</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00016">MainWindow()</a> и <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+
+</div>
+</div>
+<a id="a1d06c77f051dfd9f0ca01ce2b845ebc9" name="a1d06c77f051dfd9f0ca01ce2b845ebc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d06c77f051dfd9f0ca01ce2b845ebc9">&#9670;&#160;</a></span>welcomeLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* MainWindow::welcomeLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метка с приветствием пользователя </p>
+
+<p class="definition">См. определение в файле <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a> строка <a class="el" href="mainwindow_8h_source.html#l00076">76</a></p>
+
+<p class="reference">Используется в <a class="el" href="mainwindow_8cpp_source.html#l00024">setupUI()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>client/<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li>client/<a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

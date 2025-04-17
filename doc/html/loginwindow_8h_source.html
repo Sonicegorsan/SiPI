@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Исходный файл client/loginwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('loginwindow_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">loginwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="loginwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef LOGINWINDOW_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define LOGINWINDOW_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_login_window.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">LoginWindow</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">LoginWindow</a>(QTcpSocket *<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>, QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>signals:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_login_window.html#aeb21e083fba451ba409785cb8c0889bd">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_login_window.html#aeb21e083fba451ba409785cb8c0889bd">loginSuccess</a>(<span class="keyword">const</span> QString &amp;username, <span class="keyword">const</span> QString &amp;role);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">onLoginButtonClicked</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">onRegisterButtonClicked</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">onReadyRead</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">onConnected</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">onErrorOccurred</a>(QAbstractSocket::SocketError socketError);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">setupUI</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">   75</a></span>    QLineEdit *<a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a>;    </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">   76</a></span>    QLineEdit *<a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a>;    </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">   77</a></span>    QPushButton *<a class="code hl_variable" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">loginButton</a>;       </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">   78</a></span>    QPushButton *<a class="code hl_variable" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">registerButton</a>;    </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">   79</a></span>    QLabel *<a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>;            </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">   81</a></span>    QTcpSocket *<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>;             </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_login_window.html#aa5dd0270f8b08deb02f3d0314f863146">   86</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_login_window.html#aa5dd0270f8b08deb02f3d0314f863146">RequestType</a> { LoginRequest, RegisterRequest };</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">   87</a></span>    <a class="code hl_enumeration" href="class_login_window.html#aa5dd0270f8b08deb02f3d0314f863146">RequestType</a> <a class="code hl_variable" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">currentRequest</a>;     </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif </span><span class="comment">// LOGINWINDOW_H</span></div>
+<div class="ttc" id="aclass_login_window_html_a02f6eaba686aa435d88901f2cdc712e7"><div class="ttname"><a href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">LoginWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdoc">Слот для обработки данных, поступающих от сервера</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00131">loginwindow.cpp:131</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a0cd910b47ba87178025e5e2146a59fb3"><div class="ttname"><a href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">LoginWindow::passwordLineEdit</a></div><div class="ttdeci">QLineEdit * passwordLineEdit</div><div class="ttdoc">Поле для ввода пароля</div><div class="ttdef"><b>Определения</b> <a href="#l00076">loginwindow.h:76</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a2d3e6bf224cd85677e10355cd68a2bd5"><div class="ttname"><a href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">LoginWindow::loginButton</a></div><div class="ttdeci">QPushButton * loginButton</div><div class="ttdoc">Кнопка входа</div><div class="ttdef"><b>Определения</b> <a href="#l00077">loginwindow.h:77</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a46389ab3d8ee779d48ec1740486cbc0d"><div class="ttname"><a href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">LoginWindow::LoginWindow</a></div><div class="ttdeci">LoginWindow(QTcpSocket *socket, QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор класса LoginWindow.</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00012">loginwindow.cpp:12</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a4af320b86d63591c5f4e229b2d260f7a"><div class="ttname"><a href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">LoginWindow::usernameLineEdit</a></div><div class="ttdeci">QLineEdit * usernameLineEdit</div><div class="ttdoc">Поле для ввода имени пользователя</div><div class="ttdef"><b>Определения</b> <a href="#l00075">loginwindow.h:75</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a52e45d58fcd1f162046efa25b4ed4fba"><div class="ttname"><a href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">LoginWindow::onConnected</a></div><div class="ttdeci">void onConnected()</div><div class="ttdoc">Слот, вызываемый при установлении соединения с сервером</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00061">loginwindow.cpp:61</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a692aea646c278a8865add8f36e77da5a"><div class="ttname"><a href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">LoginWindow::registerButton</a></div><div class="ttdeci">QPushButton * registerButton</div><div class="ttdoc">Кнопка регистрации</div><div class="ttdef"><b>Определения</b> <a href="#l00078">loginwindow.h:78</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a9aeebfd5025fe47ff41619e12342d80c"><div class="ttname"><a href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">LoginWindow::setupUI</a></div><div class="ttdeci">void setupUI()</div><div class="ttdoc">Настраивает пользовательский интерфейс окна авторизации</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00023">loginwindow.cpp:23</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aa5dd0270f8b08deb02f3d0314f863146"><div class="ttname"><a href="class_login_window.html#aa5dd0270f8b08deb02f3d0314f863146">LoginWindow::RequestType</a></div><div class="ttdeci">RequestType</div><div class="ttdoc">Типы запросов, которые могут быть отправлены</div><div class="ttdef"><b>Определения</b> <a href="#l00086">loginwindow.h:86</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aaf82e43528dd52e96acc6598de7dd8e8"><div class="ttname"><a href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">LoginWindow::onErrorOccurred</a></div><div class="ttdeci">void onErrorOccurred(QAbstractSocket::SocketError socketError)</div><div class="ttdoc">Слот для обработки ошибок соединения</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00065">loginwindow.cpp:65</a></div></div>
+<div class="ttc" id="aclass_login_window_html_abaa67cfbf3036114483b5bb1114dcefe"><div class="ttname"><a href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">LoginWindow::statusLabel</a></div><div class="ttdeci">QLabel * statusLabel</div><div class="ttdoc">Метка для вывода статусных сообщений</div><div class="ttdef"><b>Определения</b> <a href="#l00079">loginwindow.h:79</a></div></div>
+<div class="ttc" id="aclass_login_window_html_ac0936177b2035e7de1a7dace2de33fb6"><div class="ttname"><a href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">LoginWindow::onLoginButtonClicked</a></div><div class="ttdeci">void onLoginButtonClicked()</div><div class="ttdoc">Слот, вызываемый при нажатии кнопки входа</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00072">loginwindow.cpp:72</a></div></div>
+<div class="ttc" id="aclass_login_window_html_ac4821c3f0b29fac9f858e0df6bd138d3"><div class="ttname"><a href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">LoginWindow::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">Сокет для связи с сервером</div><div class="ttdef"><b>Определения</b> <a href="#l00081">loginwindow.h:81</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aeb21e083fba451ba409785cb8c0889bd"><div class="ttname"><a href="class_login_window.html#aeb21e083fba451ba409785cb8c0889bd">LoginWindow::loginSuccess</a></div><div class="ttdeci">void loginSuccess(const QString &amp;username, const QString &amp;role)</div><div class="ttdoc">Сигнал, отправляемый при успешной авторизации</div></div>
+<div class="ttc" id="aclass_login_window_html_aed6abd8bb55160e286ca0584ec51b2ac"><div class="ttname"><a href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">LoginWindow::currentRequest</a></div><div class="ttdeci">RequestType currentRequest</div><div class="ttdoc">Текущий тип запроса</div><div class="ttdef"><b>Определения</b> <a href="#l00087">loginwindow.h:87</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aee09328b98a4de96bb0b39641db65a8a"><div class="ttname"><a href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">LoginWindow::onRegisterButtonClicked</a></div><div class="ttdeci">void onRegisterButtonClicked()</div><div class="ttdoc">Слот, вызываемый при нажатии кнопки регистрации</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8cpp_source.html#l00099">loginwindow.cpp:99</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="loginwindow_8h.html">loginwindow.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

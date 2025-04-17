@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Класс ClientHandler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_client_handler.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_client_handler-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс ClientHandler</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс, обрабатывающий соединение с клиентом и обрабатывающий запросы  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="clienthandler_8h_source.html">clienthandler.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ClientHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler__inherit__graph.png" border="0" usemap="#a_client_handler_inherit__map" alt="Inheritance graph"/></div>
+</div>
+<div class="dynheader">
+Граф связей класса ClientHandler:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler__coll__graph.png" border="0" usemap="#a_client_handler_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:ae20809f819ff1ea6f99516979b58e808" id="r_ae20809f819ff1ea6f99516979b58e808"><td class="memItemLeft" align="right" valign="top"><a id="ae20809f819ff1ea6f99516979b58e808" name="ae20809f819ff1ea6f99516979b58e808"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnected</b> ()</td></tr>
+<tr class="memdesc:ae20809f819ff1ea6f99516979b58e808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, отправляемый при отключении клиента <br /></td></tr>
+<tr class="separator:ae20809f819ff1ea6f99516979b58e808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5b9105daa20c2fa68e5e3ed8f9ce9cd5" id="r_a5b9105daa20c2fa68e5e3ed8f9ce9cd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b9105daa20c2fa68e5e3ed8f9ce9cd5">ClientHandler</a> (qintptr socketDescriptor, QSqlDatabase <a class="el" href="#a7e4ebce3b2de84eda329b432caa5b2dc">db</a>, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a5b9105daa20c2fa68e5e3ed8f9ce9cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_client_handler.html" title="Класс, обрабатывающий соединение с клиентом и обрабатывающий запросы">ClientHandler</a>.  <br /></td></tr>
+<tr class="separator:a5b9105daa20c2fa68e5e3ed8f9ce9cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a232b13b7e231e00a2ddbd98de6e104ce" id="r_a232b13b7e231e00a2ddbd98de6e104ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a232b13b7e231e00a2ddbd98de6e104ce">onReadyRead</a> ()</td></tr>
+<tr class="memdesc:a232b13b7e231e00a2ddbd98de6e104ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки данных, поступающих от клиента  <br /></td></tr>
+<tr class="separator:a232b13b7e231e00a2ddbd98de6e104ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc85a10c15db2cfc12faeed47edd9781" id="r_acc85a10c15db2cfc12faeed47edd9781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc85a10c15db2cfc12faeed47edd9781">onDisconnected</a> ()</td></tr>
+<tr class="memdesc:acc85a10c15db2cfc12faeed47edd9781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот для обработки отключения клиента  <br /></td></tr>
+<tr class="separator:acc85a10c15db2cfc12faeed47edd9781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:aff9f8b95d206524e5c093e809200e047" id="r_aff9f8b95d206524e5c093e809200e047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff9f8b95d206524e5c093e809200e047">processData</a> (const QByteArray &amp;data)</td></tr>
+<tr class="memdesc:aff9f8b95d206524e5c093e809200e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обрабатывает полученные от клиента данные  <br /></td></tr>
+<tr class="separator:aff9f8b95d206524e5c093e809200e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9419e0b522e3209b433a9dada19330c0" id="r_a9419e0b522e3209b433a9dada19330c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9419e0b522e3209b433a9dada19330c0">sendResponse</a> (const QByteArray &amp;data)</td></tr>
+<tr class="memdesc:a9419e0b522e3209b433a9dada19330c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправляет ответ клиенту  <br /></td></tr>
+<tr class="separator:a9419e0b522e3209b433a9dada19330c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ab5f0782502158ca9de3921581ff2ff96" id="r_ab5f0782502158ca9de3921581ff2ff96"><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f0782502158ca9de3921581ff2ff96">socket</a></td></tr>
+<tr class="memdesc:ab5f0782502158ca9de3921581ff2ff96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сокет соединения с клиентом  <br /></td></tr>
+<tr class="separator:ab5f0782502158ca9de3921581ff2ff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4ebce3b2de84eda329b432caa5b2dc" id="r_a7e4ebce3b2de84eda329b432caa5b2dc"><td class="memItemLeft" align="right" valign="top">QSqlDatabase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e4ebce3b2de84eda329b432caa5b2dc">db</a></td></tr>
+<tr class="memdesc:a7e4ebce3b2de84eda329b432caa5b2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Соединение с базой данных  <br /></td></tr>
+<tr class="separator:a7e4ebce3b2de84eda329b432caa5b2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dbe364876c89341e997e9160ac5c57" id="r_ac3dbe364876c89341e997e9160ac5c57"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3dbe364876c89341e997e9160ac5c57">username</a></td></tr>
+<tr class="memdesc:ac3dbe364876c89341e997e9160ac5c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя пользователя после авторизации  <br /></td></tr>
+<tr class="separator:ac3dbe364876c89341e997e9160ac5c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс, обрабатывающий соединение с клиентом и обрабатывающий запросы </p>
+<p>Класс <a class="el" href="class_client_handler.html" title="Класс, обрабатывающий соединение с клиентом и обрабатывающий запросы">ClientHandler</a> отвечает за обработку отдельного клиентского подключения. Он взаимодействует с базой данных, обрабатывает команды клиента и отправляет ответы. Поддерживает авторизацию, регистрацию, работу с сообщениями, задачами и отчетами. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8h_source.html">clienthandler.h</a> строка <a class="el" href="clienthandler_8h_source.html#l00021">21</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5b9105daa20c2fa68e5e3ed8f9ce9cd5" name="a5b9105daa20c2fa68e5e3ed8f9ce9cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9105daa20c2fa68e5e3ed8f9ce9cd5">&#9670;&#160;</a></span>ClientHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ClientHandler::ClientHandler </td>
+          <td>(</td>
+          <td class="paramtype">qintptr</td>          <td class="paramname"><span class="paramname"><em>socketDescriptor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSqlDatabase</td>          <td class="paramname"><span class="paramname"><em>db</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_client_handler.html" title="Класс, обрабатывающий соединение с клиентом и обрабатывающий запросы">ClientHandler</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socketDescriptor</td><td>Дескриптор сокета нового подключения </td></tr>
+    <tr><td class="paramname">db</td><td>Соединение с базой данных </td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Инициализирует сокет и устанавливает соединение с клиентом</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socketDescriptor</td><td>Дескриптор сокета нового подключения </td></tr>
+    <tr><td class="paramname">db</td><td>Соединение с базой данных </td></tr>
+    <tr><td class="paramname">parent</td><td>Родительский объект </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a> строка <a class="el" href="clienthandler_8cpp_source.html#l00025">25</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="clienthandler_8h_source.html#l00051">db</a>, <a class="el" href="clienthandler_8cpp_source.html#l00054">onDisconnected()</a>, <a class="el" href="clienthandler_8cpp_source.html#l00044">onReadyRead()</a> и <a class="el" href="clienthandler_8h_source.html#l00050">socket</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_a5b9105daa20c2fa68e5e3ed8f9ce9cd5_cgraph.png" border="0" usemap="#aclass_client_handler_a5b9105daa20c2fa68e5e3ed8f9ce9cd5_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="acc85a10c15db2cfc12faeed47edd9781" name="acc85a10c15db2cfc12faeed47edd9781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc85a10c15db2cfc12faeed47edd9781">&#9670;&#160;</a></span>onDisconnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientHandler::onDisconnected </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки отключения клиента </p>
+<p>Вызывается при разрыве соединения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a> строка <a class="el" href="clienthandler_8cpp_source.html#l00054">54</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="#ae20809f819ff1ea6f99516979b58e808">disconnected()</a> и <a class="el" href="clienthandler_8h_source.html#l00050">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00025">ClientHandler()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_acc85a10c15db2cfc12faeed47edd9781_cgraph.png" border="0" usemap="#aclass_client_handler_acc85a10c15db2cfc12faeed47edd9781_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_acc85a10c15db2cfc12faeed47edd9781_icgraph.png" border="0" usemap="#aclass_client_handler_acc85a10c15db2cfc12faeed47edd9781_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a232b13b7e231e00a2ddbd98de6e104ce" name="a232b13b7e231e00a2ddbd98de6e104ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232b13b7e231e00a2ddbd98de6e104ce">&#9670;&#160;</a></span>onReadyRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientHandler::onReadyRead </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот для обработки данных, поступающих от клиента </p>
+<p>Вызывается, когда в сокете есть данные для чтения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a> строка <a class="el" href="clienthandler_8cpp_source.html#l00044">44</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="clienthandler_8cpp_source.html#l00066">processData()</a> и <a class="el" href="clienthandler_8h_source.html#l00050">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00025">ClientHandler()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_a232b13b7e231e00a2ddbd98de6e104ce_cgraph.png" border="0" usemap="#aclass_client_handler_a232b13b7e231e00a2ddbd98de6e104ce_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_a232b13b7e231e00a2ddbd98de6e104ce_icgraph.png" border="0" usemap="#aclass_client_handler_a232b13b7e231e00a2ddbd98de6e104ce_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aff9f8b95d206524e5c093e809200e047" name="aff9f8b95d206524e5c093e809200e047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9f8b95d206524e5c093e809200e047">&#9670;&#160;</a></span>processData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientHandler::processData </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обрабатывает полученные от клиента данные </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Данные в формате JSON</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Разбирает JSON-запрос и выполняет соответствующую команду</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Данные в формате JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a> строка <a class="el" href="clienthandler_8cpp_source.html#l00066">66</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="clienthandler_8h_source.html#l00051">db</a>, <a class="el" href="clienthandler_8cpp_source.html#l00255">sendResponse()</a> и <a class="el" href="clienthandler_8h_source.html#l00052">username</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00044">onReadyRead()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_aff9f8b95d206524e5c093e809200e047_cgraph.png" border="0" usemap="#aclass_client_handler_aff9f8b95d206524e5c093e809200e047_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_aff9f8b95d206524e5c093e809200e047_icgraph.png" border="0" usemap="#aclass_client_handler_aff9f8b95d206524e5c093e809200e047_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a9419e0b522e3209b433a9dada19330c0" name="a9419e0b522e3209b433a9dada19330c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9419e0b522e3209b433a9dada19330c0">&#9670;&#160;</a></span>sendResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientHandler::sendResponse </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отправляет ответ клиенту </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Данные в формате JSON </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a> строка <a class="el" href="clienthandler_8cpp_source.html#l00255">255</a></p>
+
+<p class="reference">Перекрестные ссылки <a class="el" href="clienthandler_8h_source.html#l00050">socket</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00066">processData()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_client_handler_a9419e0b522e3209b433a9dada19330c0_icgraph.png" border="0" usemap="#aclass_client_handler_a9419e0b522e3209b433a9dada19330c0_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a7e4ebce3b2de84eda329b432caa5b2dc" name="a7e4ebce3b2de84eda329b432caa5b2dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4ebce3b2de84eda329b432caa5b2dc">&#9670;&#160;</a></span>db</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSqlDatabase ClientHandler::db</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Соединение с базой данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8h_source.html">clienthandler.h</a> строка <a class="el" href="clienthandler_8h_source.html#l00051">51</a></p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00025">ClientHandler()</a> и <a class="el" href="clienthandler_8cpp_source.html#l00066">processData()</a>.</p>
+
+</div>
+</div>
+<a id="ab5f0782502158ca9de3921581ff2ff96" name="ab5f0782502158ca9de3921581ff2ff96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f0782502158ca9de3921581ff2ff96">&#9670;&#160;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* ClientHandler::socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сокет соединения с клиентом </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8h_source.html">clienthandler.h</a> строка <a class="el" href="clienthandler_8h_source.html#l00050">50</a></p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00025">ClientHandler()</a>, <a class="el" href="clienthandler_8cpp_source.html#l00054">onDisconnected()</a>, <a class="el" href="clienthandler_8cpp_source.html#l00044">onReadyRead()</a> и <a class="el" href="clienthandler_8cpp_source.html#l00255">sendResponse()</a>.</p>
+
+</div>
+</div>
+<a id="ac3dbe364876c89341e997e9160ac5c57" name="ac3dbe364876c89341e997e9160ac5c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3dbe364876c89341e997e9160ac5c57">&#9670;&#160;</a></span>username</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ClientHandler::username</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Имя пользователя после авторизации </p>
+
+<p class="definition">См. определение в файле <a class="el" href="clienthandler_8h_source.html">clienthandler.h</a> строка <a class="el" href="clienthandler_8h_source.html#l00052">52</a></p>
+
+<p class="reference">Используется в <a class="el" href="clienthandler_8cpp_source.html#l00066">processData()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>server/<a class="el" href="clienthandler_8h_source.html">clienthandler.h</a></li>
+<li>server/<a class="el" href="clienthandler_8cpp_source.html">clienthandler.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_client_handler.html">ClientHandler</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

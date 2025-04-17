@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Исходный файл server/clienthandler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('clienthandler_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">clienthandler.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="clienthandler_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CLIENTHANDLER_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CLIENTHANDLER_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QTcpSocket&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QSqlDatabase&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_client_handler.html">   21</a></span><span class="keyword">class </span><a class="code hl_function" href="class_client_handler.html#a5b9105daa20c2fa68e5e3ed8f9ce9cd5">ClientHandler</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Q_OBJECT</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_client_handler.html#a5b9105daa20c2fa68e5e3ed8f9ce9cd5">ClientHandler</a>(qintptr socketDescriptor, QSqlDatabase <a class="code hl_variable" href="class_client_handler.html#a7e4ebce3b2de84eda329b432caa5b2dc">db</a>, QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>signals:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_client_handler.html#ae20809f819ff1ea6f99516979b58e808">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_client_handler.html#ae20809f819ff1ea6f99516979b58e808">disconnected</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_client_handler.html#a232b13b7e231e00a2ddbd98de6e104ce">onReadyRead</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_client_handler.html#acc85a10c15db2cfc12faeed47edd9781">onDisconnected</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_client_handler.html#ab5f0782502158ca9de3921581ff2ff96">   50</a></span>    QTcpSocket *<a class="code hl_variable" href="class_client_handler.html#ab5f0782502158ca9de3921581ff2ff96">socket</a>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_client_handler.html#a7e4ebce3b2de84eda329b432caa5b2dc">   51</a></span>    QSqlDatabase <a class="code hl_variable" href="class_client_handler.html#a7e4ebce3b2de84eda329b432caa5b2dc">db</a>; </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_client_handler.html#ac3dbe364876c89341e997e9160ac5c57">   52</a></span>    QString <a class="code hl_variable" href="class_client_handler.html#ac3dbe364876c89341e997e9160ac5c57">username</a>; </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_client_handler.html#aff9f8b95d206524e5c093e809200e047">processData</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_client_handler.html#a9419e0b522e3209b433a9dada19330c0">sendResponse</a>(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// CLIENTHANDLER_H</span></div>
+<div class="ttc" id="aclass_client_handler_html_a232b13b7e231e00a2ddbd98de6e104ce"><div class="ttname"><a href="class_client_handler.html#a232b13b7e231e00a2ddbd98de6e104ce">ClientHandler::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdoc">Слот для обработки данных, поступающих от клиента</div><div class="ttdef"><b>Определения</b> <a href="clienthandler_8cpp_source.html#l00044">clienthandler.cpp:44</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_a5b9105daa20c2fa68e5e3ed8f9ce9cd5"><div class="ttname"><a href="class_client_handler.html#a5b9105daa20c2fa68e5e3ed8f9ce9cd5">ClientHandler::ClientHandler</a></div><div class="ttdeci">ClientHandler(qintptr socketDescriptor, QSqlDatabase db, QObject *parent=nullptr)</div><div class="ttdoc">Конструктор класса ClientHandler.</div><div class="ttdef"><b>Определения</b> <a href="clienthandler_8cpp_source.html#l00025">clienthandler.cpp:25</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_a7e4ebce3b2de84eda329b432caa5b2dc"><div class="ttname"><a href="class_client_handler.html#a7e4ebce3b2de84eda329b432caa5b2dc">ClientHandler::db</a></div><div class="ttdeci">QSqlDatabase db</div><div class="ttdoc">Соединение с базой данных</div><div class="ttdef"><b>Определения</b> <a href="#l00051">clienthandler.h:51</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_a9419e0b522e3209b433a9dada19330c0"><div class="ttname"><a href="class_client_handler.html#a9419e0b522e3209b433a9dada19330c0">ClientHandler::sendResponse</a></div><div class="ttdeci">void sendResponse(const QByteArray &amp;data)</div><div class="ttdoc">Отправляет ответ клиенту</div><div class="ttdef"><b>Определения</b> <a href="clienthandler_8cpp_source.html#l00255">clienthandler.cpp:255</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_ab5f0782502158ca9de3921581ff2ff96"><div class="ttname"><a href="class_client_handler.html#ab5f0782502158ca9de3921581ff2ff96">ClientHandler::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">Сокет соединения с клиентом</div><div class="ttdef"><b>Определения</b> <a href="#l00050">clienthandler.h:50</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_ac3dbe364876c89341e997e9160ac5c57"><div class="ttname"><a href="class_client_handler.html#ac3dbe364876c89341e997e9160ac5c57">ClientHandler::username</a></div><div class="ttdeci">QString username</div><div class="ttdoc">Имя пользователя после авторизации</div><div class="ttdef"><b>Определения</b> <a href="#l00052">clienthandler.h:52</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_acc85a10c15db2cfc12faeed47edd9781"><div class="ttname"><a href="class_client_handler.html#acc85a10c15db2cfc12faeed47edd9781">ClientHandler::onDisconnected</a></div><div class="ttdeci">void onDisconnected()</div><div class="ttdoc">Слот для обработки отключения клиента</div><div class="ttdef"><b>Определения</b> <a href="clienthandler_8cpp_source.html#l00054">clienthandler.cpp:54</a></div></div>
+<div class="ttc" id="aclass_client_handler_html_ae20809f819ff1ea6f99516979b58e808"><div class="ttname"><a href="class_client_handler.html#ae20809f819ff1ea6f99516979b58e808">ClientHandler::disconnected</a></div><div class="ttdeci">void disconnected()</div><div class="ttdoc">Сигнал, отправляемый при отключении клиента</div></div>
+<div class="ttc" id="aclass_client_handler_html_aff9f8b95d206524e5c093e809200e047"><div class="ttname"><a href="class_client_handler.html#aff9f8b95d206524e5c093e809200e047">ClientHandler::processData</a></div><div class="ttdeci">void processData(const QByteArray &amp;data)</div><div class="ttdoc">Обрабатывает полученные от клиента данные</div><div class="ttdef"><b>Определения</b> <a href="clienthandler_8cpp_source.html#l00066">clienthandler.cpp:66</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_41e1742e44e2de38b3bc91f993fed282.html">server</a></li><li class="navelem"><a class="el" href="clienthandler_8h.html">clienthandler.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>

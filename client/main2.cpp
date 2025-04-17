@@ -1,6 +1,6 @@
 #include <QApplication>
 #include "loginwindow.h"
-#include "mainwindow.h" // Обязательно включите этот заголовок
+#include "mainwindow.h" // РћР±СЏР·Р°С‚РµР»СЊРЅРѕ РІРєР»СЋС‡РёС‚Рµ СЌС‚РѕС‚ Р·Р°РіРѕР»РѕРІРѕРє
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);

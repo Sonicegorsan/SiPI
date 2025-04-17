@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Внутренная Система Интеллектуальных Ресурсов Предприятия: Исходный файл client/loginwindow.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Внутренная Система Интеллектуальных Ресурсов Предприятия<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">ВСРИРП</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('loginwindow_8cpp_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">loginwindow.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="loginwindow_8h.html">loginwindow.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QLineEdit&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QPushButton&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QLabel&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QVBoxLayout&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QHBoxLayout&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QJsonDocument&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QCryptographicHash&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">   12</a></span><a class="code hl_function" href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">LoginWindow::LoginWindow</a>(QTcpSocket *<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>, QWidget *parent)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    : QWidget(parent), <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>(<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">setupUI</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    connect(<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>, &amp;QTcpSocket::readyRead, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">LoginWindow::onReadyRead</a>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    connect(<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>, &amp;QTcpSocket::connected, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">LoginWindow::onConnected</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// используем сигнал &#39;error&#39;, если &#39;errorOccurred&#39; недоступен</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    connect(<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>, QOverload&lt;QAbstractSocket::SocketError&gt;::of(&amp;QAbstractSocket::error),</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">LoginWindow::onErrorOccurred</a>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">LoginWindow::setupUI</a>() {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    setWindowTitle(<span class="stringliteral">&quot;Вход в систему&quot;</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    QLabel *usernameLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Имя пользователя:&quot;</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    QLabel *passwordLabel = <span class="keyword">new</span> QLabel(<span class="stringliteral">&quot;Пароль:&quot;</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a> = <span class="keyword">new</span> QLineEdit();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a>-&gt;setEchoMode(QLineEdit::Password);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_variable" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">loginButton</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Войти&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_variable" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">registerButton</a> = <span class="keyword">new</span> QPushButton(<span class="stringliteral">&quot;Зарегистрироваться&quot;</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a> = <span class="keyword">new</span> QLabel();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QHBoxLayout *usernameLayout = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    usernameLayout-&gt;addWidget(usernameLabel);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    usernameLayout-&gt;addWidget(<a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    QHBoxLayout *passwordLayout = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    passwordLayout-&gt;addWidget(passwordLabel);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    passwordLayout-&gt;addWidget(<a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    QHBoxLayout *buttonsLayout = <span class="keyword">new</span> QHBoxLayout();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    buttonsLayout-&gt;addWidget(<a class="code hl_variable" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">loginButton</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    buttonsLayout-&gt;addWidget(<a class="code hl_variable" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">registerButton</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    QVBoxLayout *mainLayout = <span class="keyword">new</span> QVBoxLayout();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    mainLayout-&gt;addLayout(usernameLayout);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    mainLayout-&gt;addLayout(passwordLayout);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    mainLayout-&gt;addLayout(buttonsLayout);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    mainLayout-&gt;addWidget(<a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    setLayout(mainLayout);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    connect(<a class="code hl_variable" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">loginButton</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">LoginWindow::onLoginButtonClicked</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    connect(<a class="code hl_variable" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">registerButton</a>, &amp;QPushButton::clicked, <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">LoginWindow::onRegisterButtonClicked</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">   61</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">LoginWindow::onConnected</a>() {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    qDebug() &lt;&lt; <span class="stringliteral">&quot;Подключено к серверу&quot;</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">   65</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">LoginWindow::onErrorOccurred</a>(QAbstractSocket::SocketError socketError) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    Q_UNUSED(socketError);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(<span class="stringliteral">&quot;Ошибка подключения к серверу&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">loginButton</a>-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_variable" href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">registerButton</a>-&gt;setEnabled(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">   72</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">LoginWindow::onLoginButtonClicked</a>() {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;state() != QAbstractSocket::ConnectedState) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(<span class="stringliteral">&quot;Нет подключения к серверу&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    QString username = <a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a>-&gt;text();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    QString password = <a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a>-&gt;text();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Хешируем пароль</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    QByteArray passwordHash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">// Создаём JSON-запрос</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    QJsonObject request;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    request[<span class="stringliteral">&quot;command&quot;</span>] = <span class="stringliteral">&quot;LOGIN&quot;</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    request[<span class="stringliteral">&quot;username&quot;</span>] = username;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    request[<span class="stringliteral">&quot;password&quot;</span>] = QString(passwordHash);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QJsonDocument doc(request);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    QByteArray data = doc.toJson();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;write(data);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;flush();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_variable" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">currentRequest</a> = LoginRequest;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">   99</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">LoginWindow::onRegisterButtonClicked</a>() {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;state() != QAbstractSocket::ConnectedState) {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(<span class="stringliteral">&quot;Нет подключения к серверу&quot;</span>);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    QString username = <a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a>-&gt;text();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QString password = <a class="code hl_variable" href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">passwordLineEdit</a>-&gt;text();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (username.isEmpty() || password.isEmpty()) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(<span class="stringliteral">&quot;Введите имя пользователя и пароль&quot;</span>);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// Хешируем пароль</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    QByteArray passwordHash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="comment">// Создаём JSON-запрос</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    QJsonObject request;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    request[<span class="stringliteral">&quot;command&quot;</span>] = <span class="stringliteral">&quot;REGISTER&quot;</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    request[<span class="stringliteral">&quot;username&quot;</span>] = username;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    request[<span class="stringliteral">&quot;password&quot;</span>] = QString(passwordHash);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    QJsonDocument doc(request);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    QByteArray data = doc.toJson();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;write(data);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;flush();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_variable" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">currentRequest</a> = RegisterRequest;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
+</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">  131</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">LoginWindow::onReadyRead</a>() {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    QByteArray responseData = <a class="code hl_variable" href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">socket</a>-&gt;readAll();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    QJsonDocument responseDoc = QJsonDocument::fromJson(responseData);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    QJsonObject response = responseDoc.object();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    QString status = response[<span class="stringliteral">&quot;status&quot;</span>].toString();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    QString message = response[<span class="stringliteral">&quot;message&quot;</span>].toString();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">if</span> (status == <span class="stringliteral">&quot;OK&quot;</span>) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">currentRequest</a> == LoginRequest) {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            QString role = response[<span class="stringliteral">&quot;role&quot;</span>].toString();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            emit <a class="code hl_signal" href="class_login_window.html#aeb21e083fba451ba409785cb8c0889bd">loginSuccess</a>(<a class="code hl_variable" href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">usernameLineEdit</a>-&gt;text(), role);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            this-&gt;close();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">currentRequest</a> == RegisterRequest) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(<span class="stringliteral">&quot;Регистрация успешна. Теперь вы можете войти.&quot;</span>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_variable" href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">statusLabel</a>-&gt;setText(message);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}</div>
+</div>
+<div class="ttc" id="aclass_login_window_html_a02f6eaba686aa435d88901f2cdc712e7"><div class="ttname"><a href="class_login_window.html#a02f6eaba686aa435d88901f2cdc712e7">LoginWindow::onReadyRead</a></div><div class="ttdeci">void onReadyRead()</div><div class="ttdoc">Слот для обработки данных, поступающих от сервера</div><div class="ttdef"><b>Определения</b> <a href="#l00131">loginwindow.cpp:131</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a0cd910b47ba87178025e5e2146a59fb3"><div class="ttname"><a href="class_login_window.html#a0cd910b47ba87178025e5e2146a59fb3">LoginWindow::passwordLineEdit</a></div><div class="ttdeci">QLineEdit * passwordLineEdit</div><div class="ttdoc">Поле для ввода пароля</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00076">loginwindow.h:76</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a2d3e6bf224cd85677e10355cd68a2bd5"><div class="ttname"><a href="class_login_window.html#a2d3e6bf224cd85677e10355cd68a2bd5">LoginWindow::loginButton</a></div><div class="ttdeci">QPushButton * loginButton</div><div class="ttdoc">Кнопка входа</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00077">loginwindow.h:77</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a46389ab3d8ee779d48ec1740486cbc0d"><div class="ttname"><a href="class_login_window.html#a46389ab3d8ee779d48ec1740486cbc0d">LoginWindow::LoginWindow</a></div><div class="ttdeci">LoginWindow(QTcpSocket *socket, QWidget *parent=nullptr)</div><div class="ttdoc">Конструктор класса LoginWindow.</div><div class="ttdef"><b>Определения</b> <a href="#l00012">loginwindow.cpp:12</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a4af320b86d63591c5f4e229b2d260f7a"><div class="ttname"><a href="class_login_window.html#a4af320b86d63591c5f4e229b2d260f7a">LoginWindow::usernameLineEdit</a></div><div class="ttdeci">QLineEdit * usernameLineEdit</div><div class="ttdoc">Поле для ввода имени пользователя</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00075">loginwindow.h:75</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a52e45d58fcd1f162046efa25b4ed4fba"><div class="ttname"><a href="class_login_window.html#a52e45d58fcd1f162046efa25b4ed4fba">LoginWindow::onConnected</a></div><div class="ttdeci">void onConnected()</div><div class="ttdoc">Слот, вызываемый при установлении соединения с сервером</div><div class="ttdef"><b>Определения</b> <a href="#l00061">loginwindow.cpp:61</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a692aea646c278a8865add8f36e77da5a"><div class="ttname"><a href="class_login_window.html#a692aea646c278a8865add8f36e77da5a">LoginWindow::registerButton</a></div><div class="ttdeci">QPushButton * registerButton</div><div class="ttdoc">Кнопка регистрации</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00078">loginwindow.h:78</a></div></div>
+<div class="ttc" id="aclass_login_window_html_a9aeebfd5025fe47ff41619e12342d80c"><div class="ttname"><a href="class_login_window.html#a9aeebfd5025fe47ff41619e12342d80c">LoginWindow::setupUI</a></div><div class="ttdeci">void setupUI()</div><div class="ttdoc">Настраивает пользовательский интерфейс окна авторизации</div><div class="ttdef"><b>Определения</b> <a href="#l00023">loginwindow.cpp:23</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aaf82e43528dd52e96acc6598de7dd8e8"><div class="ttname"><a href="class_login_window.html#aaf82e43528dd52e96acc6598de7dd8e8">LoginWindow::onErrorOccurred</a></div><div class="ttdeci">void onErrorOccurred(QAbstractSocket::SocketError socketError)</div><div class="ttdoc">Слот для обработки ошибок соединения</div><div class="ttdef"><b>Определения</b> <a href="#l00065">loginwindow.cpp:65</a></div></div>
+<div class="ttc" id="aclass_login_window_html_abaa67cfbf3036114483b5bb1114dcefe"><div class="ttname"><a href="class_login_window.html#abaa67cfbf3036114483b5bb1114dcefe">LoginWindow::statusLabel</a></div><div class="ttdeci">QLabel * statusLabel</div><div class="ttdoc">Метка для вывода статусных сообщений</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00079">loginwindow.h:79</a></div></div>
+<div class="ttc" id="aclass_login_window_html_ac0936177b2035e7de1a7dace2de33fb6"><div class="ttname"><a href="class_login_window.html#ac0936177b2035e7de1a7dace2de33fb6">LoginWindow::onLoginButtonClicked</a></div><div class="ttdeci">void onLoginButtonClicked()</div><div class="ttdoc">Слот, вызываемый при нажатии кнопки входа</div><div class="ttdef"><b>Определения</b> <a href="#l00072">loginwindow.cpp:72</a></div></div>
+<div class="ttc" id="aclass_login_window_html_ac4821c3f0b29fac9f858e0df6bd138d3"><div class="ttname"><a href="class_login_window.html#ac4821c3f0b29fac9f858e0df6bd138d3">LoginWindow::socket</a></div><div class="ttdeci">QTcpSocket * socket</div><div class="ttdoc">Сокет для связи с сервером</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00081">loginwindow.h:81</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aeb21e083fba451ba409785cb8c0889bd"><div class="ttname"><a href="class_login_window.html#aeb21e083fba451ba409785cb8c0889bd">LoginWindow::loginSuccess</a></div><div class="ttdeci">void loginSuccess(const QString &amp;username, const QString &amp;role)</div><div class="ttdoc">Сигнал, отправляемый при успешной авторизации</div></div>
+<div class="ttc" id="aclass_login_window_html_aed6abd8bb55160e286ca0584ec51b2ac"><div class="ttname"><a href="class_login_window.html#aed6abd8bb55160e286ca0584ec51b2ac">LoginWindow::currentRequest</a></div><div class="ttdeci">RequestType currentRequest</div><div class="ttdoc">Текущий тип запроса</div><div class="ttdef"><b>Определения</b> <a href="loginwindow_8h_source.html#l00087">loginwindow.h:87</a></div></div>
+<div class="ttc" id="aclass_login_window_html_aee09328b98a4de96bb0b39641db65a8a"><div class="ttname"><a href="class_login_window.html#aee09328b98a4de96bb0b39641db65a8a">LoginWindow::onRegisterButtonClicked</a></div><div class="ttdeci">void onRegisterButtonClicked()</div><div class="ttdoc">Слот, вызываемый при нажатии кнопки регистрации</div><div class="ttdef"><b>Определения</b> <a href="#l00099">loginwindow.cpp:99</a></div></div>
+<div class="ttc" id="aloginwindow_8h_html"><div class="ttname"><a href="loginwindow_8h.html">loginwindow.h</a></div><div class="ttdoc">Заголовочный файл класса окна авторизации</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><b>loginwindow.cpp</b></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
